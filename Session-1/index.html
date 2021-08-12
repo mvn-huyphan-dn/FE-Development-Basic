@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Training HTML</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Session 1 Homework</h1>
+        <img src="https://monstar-lab.com/global/wp-content/themes/monstar_lab_2021_theme/public/images/revamp/logo.png"
+            alt="This a monstarlab logo">
+    </header>
+    <hr>
+    <h2>This is nav-ul</h2>
+    <nav>
+        <ul>
+            <li>Li Ul 3</li>
+            <li>Li Ul 2</li>
+            <li>Li Ul 1</li>
+        </ul>
+    </nav>
+    <h2>This is nav-ol</h2>
+    <nav>
+        <ol>
+            <li>Li Ul 3</li>
+            <li>Li Ul 2</li>
+            <li>Li Ul 1</li>
+        </ol>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Deadline of this homework is before August 13 <time>10:00</time> </h2>
+            <br>
+            <video controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                    type="video/webm">
+
+                <source src="flower.mp4" type="video/mp4">
+
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+
+            <h2>This is h2 in main-section</h2>
+
+            <article>
+                <h3>This is <i>h3</i> in main-section-article</h3>
+                <h4>And h4. And span</h4>
+                <span> "span text"</span>
+            </article>
+        </section>
+
+        <a href="http://www.google.com" target="_blank">Click to go to Google with target <strong>blank</strong></a><br>
+        <a href="http://www.facebook.com" target="_self">Click to go to Facebook with target <i>self</i></a><br>
+        <a href="http://www.apple.com" target="_parent">Click to go to Facebook with target
+            <strong>parent</strong></a><br>
+        <a href="http://www.amazon.com" target="_top">Click to go to Amazon with target <i>top</i></a>
+
+        <div>Then browsing Google in iframe <br>
+            <iframe src="http://www.google.com"></iframe><br>
+            but it will be refused of course
+        </div>
+
+        <h3>Below is p using lorem</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga libero tenetur ullam iste mollitia recusandae
+            consectetur sapiente ipsam, a quibusdam iure, voluptate maxime delectus quidem aliquam at eaque natus totam!
+        </p>
+        <br>
+        <figure>
+            <blockquote>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                to do what you believe is great work. And the only way to do great work is to love what you do. If you
+                haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you
+                find it.</blockquote>
+            <figcaption>—Steve Jobs, <cite>Commencement address, June 12, 2005</cite></figcaption>
+        </figure>
+        <br>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic,
+                and hyperlink effects on World Wide Web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
+                document written in a markup language such as HTML.</dd>
+        </dl>
+        <br>
+        <pre>
+        This is a text in pre element.
+            Preformatted text is presented exactly as written in the HTML file.
+                - from mdn
+        </pre>
+        <br>
+        <p>
+            <abbr title="Cascading Style Sheets">CSS</abbr> is used to style <abbr
+                title="Hypertext Markup Language">HTML</abbr>
+            <br><br>
+            We use &lt;code&gt;code&lt;/code&gt; to create <code>code</code>
+            <br><br>
+            <kbd>Home</kbd> and <kbd>End</kbd> are really useful. Using <mark>keyboard</mark> has them help us a lot.
+            <br><br>
+            HTML is a <del>programming</del> <ins>markup</ins> language
+        </p>
+        <br>
+        <form action="#" method="get" target="_blank">
+            <fieldset>
+                <legend> Demo form</legend>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option selected hidden>Please choose your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                <br>
+                <label for="progress">Progress of homework</label>
+                <progress id="progress" value="50" max="100">50 %</progress>
+                <br>
+                <label for="note">Note</label>
+                <textarea name="note" id="note" cols="30" rows="3" placeholder="Please input note"></textarea>
+                <br>
+                <input type="button" value="Input type button">
+                <input type="submit" value="Input type submit">
+                <br>
+                <button>Button Element no type</button>
+                <button type="button">Button Element type button</button>
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <table>
+            <caption>HTMl rule</caption>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Always have &lt;!DOCTYPE hmtl&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Unique id, only one h1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Attr alt for img element like this &lt;img alt="whatever"&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Avoid put block element inside inline element, except anchor element &lt;a&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Avoid inline style</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Use as many as possible HTML5 semantics</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total: 6</td>
+                    <td>Follow them</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <form action="#" method="get" target="_blank">
+            <fieldset>
+                <legend> User Registration</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Please input name" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday" required>
+                <br>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+        <br>
+        <table>
+            <caption>User Management</caption>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Birth</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>User 1</td>
+                    <td>user1@gmail.com</td>
+                    <td>08/19/1997</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>User 2</td>
+                    <td>user2@gmail.com</td>
+                    <td>08/19/1991</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>User 3</td>
+                    <td>user3@gmail.com</td>
+                    <td>08/19/1998</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>User 4</td>
+                    <td>user4@gmail.com</td>
+                    <td>06/19/1990</td>
+                <tr>
+                    <td>5</td>
+                    <td>User 5</td>
+                    <td>user5@gmail.com</td>
+                    <td>08/20/1994</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <hr>
+    <aside>
+        <h2>Building Sidebar here</h2>
+    </aside>
+    <hr>
+    <footer>
+        <h5>This is footer</h5>
+        <h6>With h5 and h6</h6>
+    </footer>
+</body>
+
+</html>
