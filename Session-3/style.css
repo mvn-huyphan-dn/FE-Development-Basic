@@ -1,0 +1,261 @@
+.container {
+    padding: 20px;
+}
+
+.part-content {
+    padding: 0 40px;
+}
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+*.text-blue {
+  color: blue;
+}
+
+*.text-red {
+  color: red;
+}
+
+#p1 {
+  text-align: center;
+  color: darkmagenta;
+}
+
+.part2 > p {
+  text-align: center;
+  color: darkorange;
+}
+
+.part2 p {
+  font-style: italic;
+}
+
+input[type="text"] {
+  border: 2px solid #ff0000;
+}
+
+input[type="email"] {
+  background-color: lightpink;
+}
+
+a.part5-link:link {
+    color:lightseagreen;
+}
+
+a.part5-link:visited {
+    color:gray
+}
+
+a.part5-link:hover {
+    color:purple
+}
+
+a.part5-link:active {
+    color:orangered
+}
+
+.part5-p:active {
+    background-color: yellowgreen;
+}
+
+input[name="first-name"]::placeholder {
+    color: blue;
+    font-style: oblique;
+}
+
+#demo-email-part6:before {
+    content: "@";
+    color: blue;
+}
+
+#demo-email-part6:after {
+    content: "This is demo text for after pseudo-element";
+    border: darkgrey;
+    border-style: dotted;
+    background-color: dodgerblue;
+}
+
+#demo-p-part6::first-letter {
+    font-size: 3rem;
+    background-color: dodgerblue;
+}
+
+#demo-p-part6::first-line {
+    font-size: 1.25rem;
+    background-color:hotpink;
+}
+
+#demo-p-part6::selection{
+    background-color: khaki;
+    color: purple;
+}
+
+#demo-h3-part6 {
+    text-align: center;
+}
+
+#demo-h3-part6>h3 {
+    display: inline-block;
+    position: relative;
+}
+
+#demo-h3-part6::before {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: seagreen;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#demo-h3-part6::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color:tomato;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+.box-demo {
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+    border: 2px solid orange;
+    border-style: double;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.box-demo-item {
+    width: 120px;
+    height: 60px;
+    background-color: white;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+}
+
+.box-1 {
+    margin: -30px -40px -30px 30px;
+    padding: 20px;
+    background-color: gray;
+}
+
+.box-2 {
+    margin: 100px 40px -100px auto;
+    padding: 40px;
+    background-color: gray;
+}
+
+.p-part7-1 {
+    margin-bottom: 30px;
+    border: 3px solid black;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.p-part7-2 {
+    margin-top: 5px;
+    border: 3px solid black;
+    padding-bottom: 10px;
+    padding-right: 35px;
+}
+
+.part8-p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: 0.5rem;
+    text-indent: 5rem;
+}
+
+.part8-p2 {
+    text-transform: uppercase;   
+}
+
+.part9-p {
+    font-size: 2rem;
+    background-color:darkgray;
+    color:blue;
+    border: 5px solid orange;
+    outline: 5px solid green;
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-decoration-color: darkslateblue;
+    text-shadow: 2px 2px orange;
+}
+
+.box-demo-list {
+
+}
+
+.box-demo-part9 {
+    display: inline-block;
+    width: 550px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.box-part9-1 {
+    background:url(./image/moon.jpg);
+    background-repeat: no-repeat;
+}
+
+.box-part9-2 {
+    background:url(./image/moon.jpg);
+    background-repeat: repeat;
+}
+
+.box-part9-3 {
+    background:url(./image/moon.jpg);
+    background-repeat: round;
+}
+
+.box-part9-4 {
+    background:url(./image/moon.jpg);
+    background-repeat: space;
+}
+
+.box-part9-5 {
+    background:url(./image/moon.jpg);
+    background-size: contain;
+}
+
+.box-part9-6 {
+    background:url(./image/moon.jpg);
+    background-size: 200px 200px;
+}
+
+.box-part9-7 {
+    background:url(./image/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-part9-8 {
+    background:url(./image/moon.jpg);
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+}

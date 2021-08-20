@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 3 Homework</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Session 3 Homework</h1>
+        <div class="part1">
+            <h2 class="part-title">Basic Selector</h2>
+            <div class="part-content">
+                <p class="text-right text-blue">Class Selector: Paragraph has class <code>"text-right text-blue"</code>
+                </p>
+                <p id="p1">ID Selector: Paragraph has id <code>"p1"</code></p>
+            </div>
+        </div>
+
+
+        <div class="part2">
+            <h2 class="part-title">Child Selector</h2>
+            <div class="part-content">
+                <p>p element 1</p>
+                <div>
+                    <p>p element in the div</p>
+                </div>
+                <p>p element 2</p>
+                3 p element are descendant elements of div class <code>part2</code>, which have same
+                <code>font-style:italic</code>
+                <div>
+                    p element 1 and 2 are direct childrens of div class <code>part2</code>, which have
+                    <code>text-align:center; color:darkorange</code>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="part3">
+            <h2 class="part-title">Attribute Selector</h2>
+            <div class="part-content">
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="This is input type text">
+                    <p>Input type text has <code>border: 2px solid #ff0000</code></p>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="This is input type email">
+                    <p>Input type email has <code>background-color:lightpink</code></p>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="part4">
+            <h2 class="part-title">Universal Selector</h2>
+            <div class="part-content">
+                <p class="text-red">
+                    <span class="text-blue">A blue span</span> in a red paragraph
+                </p>
+                <p class="text-blue">
+                    <span class="text-red">A red span</span> in a blue paragraph
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="part5">
+            <h2 class="part-title">Pseudo-class</h2>
+            <div class="part-content">
+                <a href="#" class="part5-link">This a demo link element</a>
+                <p class="part5-p">Above link will turn <code>orangered</code> while clicking on it. This paragraph turn
+                    <code>yellowgreen</code> while clicking too.
+                </p>
+            </div>
+        </div>
+
+        <div class="part6">
+            <h2 class="part-title">Pseudo-Element</h2>
+            <div class="part-content">
+                <form action="#"></form>
+                <label for="first-name">Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="This is styled placehoder">
+                <p id="demo-p-part6">Try selecting this paragraph. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Magni animi possimus delectus sapiente nobis magnam saepe. Doloremque eaque quidem debitis
+                    delectus officia modi quisquam sapiente esse facere non, optio iusto. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Magni animi possimus delectus sapiente nobis magnam saepe. Doloremque
+                    eaque quidem debitis delectus officia modi quisquam sapiente esse facere non, optio iusto.</p>
+                <p>This is a demo paragraph with demo email: <span>Kalles<span
+                            id="demo-email-part6">domain.com</span></span> You can notice <code>@</code> is content in
+                    pseudo-element before's content</p>
+                <div id="demo-h3-part6">
+                    <h3>This is a demo title</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="part7">
+            <h2 class="part-title">Box-model</h2>
+            <div class="part-content">
+                <p class="p-part7-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo adipisci
+                    excepturi animi obcaecati, voluptatum sed minima exercitationem officiis nostrum quasi quas quisquam
+                    quos nam nemo voluptas sit. Rerum, et iste.</p>
+                <div class="box-demo">
+                    <div class="box-demo-item box-1">Box 1</div>
+                    <div class="box-demo-item box-2">Box 2</div>
+                </div>
+                <p class="p-part7-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo adipisci
+                    excepturi animi obcaecati, voluptatum sed minima exercitationem officiis nostrum quasi quas quisquam
+                    quos nam nemo voluptas sit. Rerum, et iste.</p>
+            </div>
+        </div>
+
+        <div class="part8">
+            <h2 class="part-title">Text & Font</h2>
+            <div class="part-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolore tempore enim sunt dolores
+                    quisquam voluptas deserunt recusandae officiis eveniet, deleniti voluptatibus debitis praesentium
+                    earum commodi suscipit quod. Cupiditate, nulla! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nam error veritatis minima neque dolorum nulla ullam voluptatum ex quos, in, facere quidem
+                    impedit est magnam necessitatibus optio libero consectetur enim! Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Modi illo excepturi quos error dolorem impedit, quisquam repellendus
+                    necessitatibus? Dignissimos minus amet impedit voluptas in voluptatibus, accusamus nulla
+                    necessitatibus labore vero.</p>
+                <p class="part8-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, assumenda
+                    voluptatem rerum nulla excepturi error iste facilis fuga amet nostrum itaque laboriosam
+                    exercitationem sapiente harum tenetur dolores cumque eligendi culpa! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quibusdam et laudantium repudiandae veritatis dolor aliquam, illum
+                    culpa accusantium ipsa velit quam. Autem nulla a fugit aspernatur quas aut soluta dignissimos! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur incidunt atque nulla reiciendis
+                    dolorem porro beatae quasi! Eveniet quos consequuntur earum ut officia omnis neque culpa eius
+                    voluptatem ullam!</p>
+                <p class="part8-p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nulla repudiandae
+                    voluptas velit, inventore veritatis ea aspernatur quis iure ipsa vel omnis debitis ab odit beatae
+                    sint. Molestias, recusandae cumque!</p>
+            </div>
+        </div>
+
+        <div class="part9">
+            <h2 class="part-title">Color & Background</h2>
+            <div class="part-content">
+                <p>Default paragraph</p>
+                <p class="part9-p">This is a styled paragraph</p>
+                <div class="box-demo-list">
+                    <span class="box-demo-part9 box-part9-1">Test</span>
+                    <span class="box-demo-part9 box-part9-2">Test</span>
+                    <span class="box-demo-part9 box-part9-3">Test</span>
+                    <span class="box-demo-part9 box-part9-4">Test</span>
+                    <span class="box-demo-part9 box-part9-5">Test</span>
+                    <span class="box-demo-part9 box-part9-6">Test</span>
+                    <span class="box-demo-part9 box-part9-7">Test</span>
+                    <span class="box-demo-part9 box-part9-8">Test</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
