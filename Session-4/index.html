@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/ccd4eab307.js" crossorigin="anonymous"></script>
     <title>Kalle's categories links</title>
 </head>
 
@@ -13,14 +15,17 @@
     <div class="header-banner">
         <div class="container">
             <a href="" class="header-banner__link">
-                Today deal sale off <strong>70%</strong>. End in <strong>127 days <time>08:17:45</time></strong>.
-                Hurry up
-                <i class="icon icon-arrow-right"></i>
+                <div class="header-banner__text">
+                    Today deal sale off <strong>70%</strong>. End in <strong>127 days <time>08:17:45</time></strong>.
+                    Hurry up
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <button class="btn btn-close">
+                    <i class="icon icon-dash"></i>
+                    <span>close</span>
+                </button>
             </a>
-            <button class="btn btn-close">
-                <i class="icon icon-dash"></i>
-                <span>Close</span>
-            </button>
+
         </div>
     </div>
 
@@ -29,11 +34,11 @@
             <div class="container">
                 <ul class="contact-info">
                     <li>
-                        <i class="icon icon-phone"></i>
+                        <i class="fas fa-phone-alt"></i>
                         +01 23456789
                     </li>
                     <li>
-                        <i class="icon icon-email"></i>
+                        <i class="far fa-envelope"></i>
                         <a href="" class="header-top__link">Kalles@domain.com</a>
                     </li>
                 </ul>
@@ -59,7 +64,7 @@
 
         <div class="header-bottom">
             <div class="container">
-                <a href="">
+                <a class="header-logo" href="">
                     <img src="./image/kalles.svg" alt="Kalles logo">
                 </a>
                 <nav class="header-nav">
@@ -74,10 +79,10 @@
                     </ul>
                 </nav>
                 <ul class="header-action">
-                    <li><a href="#"><i class="icon icon-search"></i></a></li>
-                    <li><a href="#"><i class="icon icon-profile"></i></a></li>
-                    <li><a href=""><i class="icon icon-wish"></i><span class="span-counter">3</span></a></li>
-                    <li><a href=""><i class="icon icon-cart"></i><span class="span-counter">5</span></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="far fa-user"></i></i></a></li>
+                    <li><a href=""><i class="far fa-heart"></i></i><span class="span-counter">3</span></a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i></i><span class="span-counter">5</span></a></li>
                 </ul>
             </div>
         </div>
@@ -88,46 +93,46 @@
             <a href="">
                 <img src="./image/loobook.jpg" alt="banner img">
             </a>
-            <div class="banner-conent">
+            <div class="banner-content">
                 <h1 class="banner-title">CLEARANCE SALE OFF TO 70%</h1>
-                <h2>Spring Collection 2021</h2>
+                <h2 class="banner-sub-title">Spring Collection 2021</h2>
                 <a href="" class="btn btn-outline">Shop Now</a>
             </div>
         </section>
 
         <section class="section-category">
-            <ul class="category-list">
-                <li class="category-item">
+            <ul class="category-list row">
+                <li class="category-item col-3">
                     <a href="" class="category-img">
                         <img src="./image/cat-bn-01.jpg" alt="category img">
                     </a>
-                    <a href="" class="category-name">Footwear</a>
+                    <a href="" class="category-name btn btn-round">Footwear</a>
                 </li>
-                <li class="category-item">
+                <li class="category-item col-3">
                     <a href="" class="category-img">
                         <img src="./image/cat-bn-02.jpg" alt="category img">
                     </a>
-                    <a href="" class="category-name">Bags</a>
+                    <a href="" class="category-name btn btn-round">Bags</a>
                 </li>
-                <li class="category-item">
+                <li class="category-item col-3">
                     <a href="" class="category-img">
                         <img src="./image/cat-bn-03.jpg" alt="category img">
                     </a>
-                    <a href="" class="category-name">Watches</a>
+                    <a href="" class="category-name btn btn-round">Watches</a>
                 </li>
-                <li class="category-item">
+                <li class="category-item col-3">
                     <a href="" class="category-img">
                         <img src="./image/cat-bn-04.jpg" alt="category img">
                     </a>
-                    <a href="" class="category-name">Caps & Hats</a>
+                    <a href="" class="category-name btn btn-round">Caps & Hats</a>
                 </li>
             </ul>
         </section>
 
         <section class="section-promotion">
             <div class="container">
-                <ul class="promotion-list">
-                    <li class="promotion-item">
+                <ul class="promotion-list row">
+                    <li class="promotion-item col-4 promotion-item-left">
                         <a href="">
                             <img src="./image/bn-01.jpeg" alt="promotion img">
                         </a>
@@ -138,12 +143,12 @@
                         </div>
                     </li>
 
-                    <li class="promotion-item">
+                    <li class="promotion-item col-4">
                         <a href="">
                             <img src="./image/pr-big-24.jpg" alt="promotion img">
                         </a>
                         <div class="promotion-item-top">
-                            <i class="icon icon-wish"></i>
+                            <i class="far fa-heart"></i>
                             <span class="discount-percent-tag">-34%</span>
                         </div>
                         <div class="promotion-item-middle">
@@ -202,14 +207,14 @@
                         </div>
                     </li>
 
-                    <li class="promotion-item">
+                    <li class="promotion-item col-4 promotion-item-right">
                         <a href="">
                             <img src="./image/pr-big-26.jpg" alt="promotion img">
                         </a>
                         <div class="promotion-content">
                             <h3>MEN COLLECTION</h3>
                             <h4>SALE 70%</h4>
-                            <p><a href="" class="btn btn-outline">Shop Now</a></p>
+                            <a href="" class="btn btn-outline">Shop Now</a>
                         </div>
                     </li>
                 </ul>
@@ -219,23 +224,23 @@
         <section class="section-instagram-gallery">
             <h2 class="section-title">INSTAGRAM SHOP</h2>
             <p class="section-description">Make your instagram shop</p>
-            <ul class="gallery-item-list">
-                <li class="gallery-item">
+            <ul class="gallery-item-list row">
+                <li class="gallery-item col-3">
                     <img src="./image/bg-pin-01.jpg" alt="gallery item img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-19-67">1</span>
                 </li>
-                <li class="gallery-item">
+                <li class="gallery-item col-3">
                     <img src="./image/bg-pin-02.jpg" alt="gallery item img">
-                    <span class="btn btn-circle">1</span>
-                    <span class="btn btn-circle">2</span>
+                    <span class="btn btn-circle position-50-50">1</span>
+                    <span class="btn btn-circle position-33-90">2</span>
                 </li>
-                <li class="gallery-item">
+                <li class="gallery-item col-3">
                     <img src="./image/bg-pin-03.jpg" alt="gallery item img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-80-78">1</span>
                 </li>
-                <li class="gallery-item">
+                <li class="gallery-item col-3">
                     <img src="./image/bg-pin-04.jpg" alt="gallery item img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-50-50">1</span>
                 </li>
             </ul>
         </section>
@@ -244,11 +249,11 @@
             <div class="container">
                 <h2 class="section-title">LASTS FROM BLOG</h2>
                 <p class="section-description">The freshest and most exciting news</p>
-                <ul class="blog-list">
-                    <li class="blog-item">
+                <ul class="blog-list row">
+                    <li class="blog-item col-4">
                         <a href="" class="blog-img"><img src="./image/blog-01.jpg" alt="blog img"></a>
                         <div class="blog-content">
-                            <a href="" class="blog-title">Spring - Summer Trending 2020</a>
+                            <h4><a href="" class="blog-title">Spring - Summer Trending 2020</a></h4>
                             <p class="blog-info">
                                 By <span class="blog-author text-bold">admin</span> on <span
                                     class="blog-time text-bold">April 6,
@@ -260,10 +265,10 @@
                                 directors, manga artists, ...</p>
                         </div>
                     </li>
-                    <li class="blog-item">
+                    <li class="blog-item col-4">
                         <a href="" class="blog-img"><img src="./image/blog-02.jpg" alt="blog img"></a>
                         <div class="blog-content">
-                            <a href="" class="blog-title">Spring - Summer Trending 2020</a>
+                            <h4><a href="" class="blog-title">The Easiest Way to Break Out on Top</a></h4>
                             <p class="blog-info">
                                 By <span class="blog-author text-bold">admin</span> on <span
                                     class="blog-time text-bold">April 6,
@@ -275,10 +280,10 @@
                                 directors, manga artists, ...</p>
                         </div>
                     </li>
-                    <li class="blog-item">
+                    <li class="blog-item col-4">
                         <a href="" class="blog-img"><img src="./image/blog-03.jpg" alt="blog img"></a>
                         <div class="blog-content">
-                            <a href="" class="blog-title">Spring - Summer Trending 2020</a>
+                            <h4><a href="" class="blog-title">Style for couple in Weeding season</a></h4>
                             <p class="blog-info">
                                 By <span class="blog-author text-bold">admin</span> on <span
                                     class="blog-time text-bold">April 6,
@@ -296,70 +301,70 @@
 
         <section class="section-instagram-carousel">
             <h2 class="section-title">@ FOLLOW US ON INSTAGRAM</h2>
-            <ul class="carousel-list">
-                <li class="carousel-item">
+            <ul class="carousel-list row">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_1.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-39-39">1</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_2.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-50-50">1</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_4.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
-                    <span class="btn btn-circle">2</span>
+                    <span class="btn btn-circle position-32-67">1</span>
+                    <span class="btn btn-circle position-98-44">2</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_5.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-28-79">1</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_6.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-48-66">1</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_8.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle position-60-42">1</span>
                 </li>
-                <li class="carousel-item">
+                <!-- <li class="carousel-item col-2">
                     <img src="./image/ins1_13.jpg" alt="carousel img">
                     <span class="btn btn-circle">1</span>
                 </li>
-                <li class="carousel-item">
+                <li class="carousel-item col-2">
                     <img src="./image/ins1_14.jpg" alt="carousel img">
-                    <span class="btn btn-circle">1</span>
+                    <span class="btn btn-circle">1</span> -->
                 </li>
             </ul>
         </section>
 
         <section class="section-service">
             <div class="container">
-                <ul class="service-list">
-                    <li class="service-item">
-                        <i class="icon icon-shipping"></i>
+                <ul class="service-list row">
+                    <li class="service-item col-3">
+                        <i class="fas fa-car"></i>
                         <div class="service-info">
                             <h3 class="service-title">FREE SHIPPING</h3>
                             <p class="service-description">Free shipping on all US order or order above $100</p>
                         </div>
                     </li>
-                    <li class="service-item">
-                        <i class="icon icon-support"></i>
+                    <li class="service-item col-3">
+                        <i class="far fa-life-ring"></i>
                         <div class="service-info">
                             <h3 class="service-title">SUPPORT 24/7</h3>
                             <p class="service-description">Contact us 24 hours a day, 7 days a week</p>
                         </div>
                     </li>
-                    <li class="service-item">
-                        <i class="icon icon-return"></i>
+                    <li class="service-item col-3">
+                        <i class="fas fa-redo-alt"></i>
                         <div class="service-info">
                             <h3 class="service-title">30 DAYS RETURN</h3>
                             <p class="service-description">Simply return it within 30 days for an exchange.</p>
                         </div>
 
                     </li>
-                    <li class="service-item">
-                        <i class="icon icon-payment"></i>
+                    <li class="service-item col-3">
+                        <i class="fas fa-user-shield"></i>
                         <div class="service-info">
                             <h3 class="service-title">100% PAYMENT SECURE</h3>
                             <p class="service-description">We ensure secure payment with PEV</p>
@@ -371,56 +376,58 @@
     </main>
 
     <footer class="page-footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-top-col">
-                    <a href="#">
+        <div class="footer-top row">
+            <div class="container">
+
+                <div class="footer-top-col col-3">
+                    <a href="#" class="footer-logo">
                         <img src="./image/kalles.svg" alt="Kalles logo">
                     </a>
                     <ul class="contact-list">
                         <li class="contact-item">
-                            <i class="icon icon-address"></i>
-                            <span> Main Rd E, St Albans VIC 3021, Australia</span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>184 Main Rd E, St Albans <br>
+                               <span class="span-pd-30">VIC 3021, Australia</span> </span>
                         </li>
-                        <li>
-                            <i class="icon icon-email"></i>
+                        <li class="contact-item">
+                            <i class="far fa-envelope"></i>
                             <span> <a href="">contact@company.com</a></span>
                         </li>
-                        <li>
-                            <i class="icon icon-phone"></i>
-                            <span> +001 2233 456</span>
+                        <li class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+001 2233 456</span>
                         </li>
                     </ul>
                     <ul class="social-list">
                         <li class="social-item">
                             <a href="">
-                                <i class="icon icon-facebook"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="social-item">
                             <a href="">
-                                <i class="icon icon-twitter"></i>
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li class="social-item">
                             <a href="">
-                                <i class="icon icon-instagram"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="social-item">
                             <a href="">
-                                <i class="icon icon-linkedin"></i>
+                                <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li class="social-item">
                             <a href="">
-                                <i class="icon icon-pinterest"></i>
+                                <i class="fab fa-pinterest-p"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="footer-top-col">
+                <div class="footer-top-col col-2">
                     <h3 class="footer-title">Categories</h3>
                     <ul class="footer-top-link-list">
                         <li>
@@ -444,7 +451,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-top-col">
+                <div class="footer-top-col col-2">
                     <h3 class="footer-title">Information</h3>
                     <ul class="footer-top-link-list">
                         <li>
@@ -468,7 +475,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-top-col">
+                <div class="footer-top-col col-2">
                     <h3 class="footer-title">Useful Links</h3>
                     <ul class="footer-top-link-list">
                         <li>
@@ -492,48 +499,51 @@
                     </ul>
                 </div>
 
-                <div class="footer-top-col">
+                <div class="footer-top-col col-3">
                     <h3 class="footer-title">Newsletter Signup</h3>
                     <p>Subscribe to our newsletter and get 10% off your first purchase</p>
                     <form action="#" class="form-newsletter">
-                        <input type="email" name="email" id="email">
-                        <button type="submit">Subscribe</button>
+                        <input type="email" name="email" id="email" placeholder="Your Email Addresses">
+                        <button class="btn btn-submit" type="submit">Subscribe</button>
                     </form>
                     <ul class="payment-list">
                         <li class="payment-item">
                             <a href="">
-                                <img src="./image/visa.jpg" alt="payment img">
+                                <i class="fab fa-cc-visa"></i>
                             </a>
                         </li>
                         <li class="payment-item">
                             <a href="">
-                                <img src="./image/paypal.jpg" alt="payment img">
+                                <i class="fab fa-cc-paypal"></i>
                             </a>
                         </li>
                         <li class="payment-item">
                             <a href="">
-                                <img src="./image/master.jpg" alt="payment img">
+                                <i class="fab fa-cc-mastercard"></i>
                             </a>
                         </li>
                         <li class="payment-item">
                             <a href="">
-                                <img src="./image/amex.jpg" alt="payment img">
+                                <i class="fab fa-cc-amex"></i>
                             </a>
                         </li>
                         <li class="payment-item">
                             <a href="">
-                                <img src="./image/discover.jpg" alt="payment img">
+                                <i class="fab fa-cc-discover"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="footer-bottom">
+        <div class="footer-bottom">
+            <div class="container">
                 <p class="copyright">
-                    Copyright © 2021 <span class="span text-cyan">Kalles</span> all rights reserved. Powered by <a
+                    Copyright © 2021 <span class="text-cyan">Kalles</span> all rights reserved. Powered by <a
                         href="">The4</a>
                 </p>
+
                 <ul class="footer-bottom-link-list">
                     <li><a href="">Shop</a></li>
                     <li><a href="">About Us</a></li>
@@ -544,7 +554,7 @@
         </div>
     </footer>
 
-    <button><i class="icon icon-arrow-up"></i></button>
+    <!-- <button><i class="icon icon-arrow-up"></i></button> -->
 </body>
 
 </html>
