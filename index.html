@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>JS Session 1 Homework</title>
+</head>
+<body>
+  <h1>JS Session 1 Homework</h1>
+  <h2>Knowledge round-up</h2>
+  <ul>
+    <li>
+      <h3>What are the differences between a variable that is: `null`, `undefined`?</h3>
+      <ul>
+        <li>
+          <p>`null` is an assigned value. It mean nothing.</p>
+          <p>`undefined` means a variable has been declared but value of that variable has not been defined.</p>
+        </li>
+        <li>
+          <p>type of `undefined` is null.</p>
+          <p>type of `null` is object.</p>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <h3>What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+      <ul>
+        <li>
+          <p>It is a syntax/statement instructs the browser to use the Strict mode which is a reduced and safer feature set of JavaScript.</p>
+        </li>
+        <li>
+          <h4>Advantages</h4>
+          <ul>
+            <li>Eliminating some JavaScript silent errors by changing them to throw errors.</li>
+            <li>Fixing mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.</li>
+            <li>Prohibiting some syntax likely to be defined in future versions of ECMAScript.</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Disadvantages</h4>
+          <ul>
+            <li>Mixing strict mode and non-strict mode when concatenating files. The final production JavaScript file is considered as a strict-mode file and some of your code may break.</li>
+            <li>Old browsers like Internet Explorer may have problems with it.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <h3>What are the differences between `==` and `===`?</h3>
+      <ul>
+        <li>Strict equality `===` compares two values for equality. Neither value is implicitly converted to some other value before being compared.</li>
+        <li>Loose equality `==` performs as follow: 
+          <ul>
+            <li>Comparing two values for equality after converting both values to a common type. After conversions (one or both sides may undergo conversions), the final equality comparison is performed exactly as `===` performs it.</li>
+            <li>Loose equality is symmetric: `A == B` always has identical semantics to `B == A` for any values of `A` and `B` (except for the order of applied conversions).</li>
+            <li>`undefined` and `null` are loosely equal; that is, `undefined == null` is true, and `null == undefined` is true.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <h3>Give a list of `Falsy` values in Javascript.</h3>
+      <ul>
+        <li>false.</li>
+        <li>The Number zero `0`, negative zero `-0`, BigInt zero `0n`.</li>
+        <li>Empty string value "", '', ``.</li>
+        <li>`null` — the absence of any value.</li>
+        <li>`undefined` — the primitive value.</li>
+        <li>`NaN` — not a number.</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
