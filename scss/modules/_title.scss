@@ -1,0 +1,46 @@
+.section-title {
+  &__span {
+    text-transform: uppercase;
+    font-size: f-pxRem(24);
+    font-weight: 600;
+    color: #220000;
+    margin: 0 30px;
+  }
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #222;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #222;
+  }
+}
+
+.section-description {
+  font-family: "Libre Baskerville", "sans-serif";
+  margin-bottom: 30px;
+  padding: 5px 0;
+  font-style: italic;
+}
+
+@include respond-below(medium) {
+  .section-title {
+    &::after {
+      width: 30px;
+      top: 50%;
+      right: -2%;
+    }
+
+    &::before {
+      width: 30px;
+      top: 50%;
+      left: -2%;
+    }
+  }
+}

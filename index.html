@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/reset.css">
-	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles.css">
 	<script src="https://kit.fontawesome.com/ccd4eab307.js" crossorigin="anonymous"></script>
 	<title>Kalle's categories links</title>
 </head>
@@ -15,6 +14,10 @@
 	<div class="header-banner">
 		<div class="container-full">
 			<a href="" class="header-banner__link">
+				<button class="btn btn-close-temp">
+					<i class="icon icon-dash"></i>
+					<span>close</span>
+				</button>
 				<div class="header-banner__text">
 					Today deal sale off <strong>70%</strong>. End in <strong>127 days <time>08:17:45</time></strong>.
 					Hurry up
@@ -30,23 +33,23 @@
 
 	<header class="page-header">
 		<div class="header-top">
-			<div class="container-full">
-				<ul class="contact-info">
-					<li>
+			<div class="container-full flex txt-center row">
+				<ul class="contact-info flex col-large-4 col-small-12">
+					<li class="flex-start">
 						<i class="fas fa-phone-alt"></i>
 						+01 23456789
 					</li>
-					<li>
+					<li class="flex-start">
 						<i class="far fa-envelope"></i>
 						<a href="" class="header-top__link">Kalles@domain.com</a>
 					</li>
 				</ul>
-				<div class="header-top__text">
+				<div class="header-top__text col-large-4 col-small-12">
 					Summer sale discount off <span class="header-top__discount text-red">50%</span>!
 					<a href="">Shop now</a>
 				</div>
 				<!-- autodropdown not select element -->
-				<ul class="list-currency">
+				<ul class="list-currency col-large-4 col-small-12">
 					<!-- <li><a href=""><i class="flag flag-aud">AUD</i></a></li>
                     <li><a href=""><i class="flag flag-cad">CAD</i></a></li>
                     <li><a href=""><i class="flag flag-dkk">DKK</i></a></li>
@@ -63,27 +66,34 @@
 
 		<div class="header-bottom">
 			<div class="container-full">
-				<div class="btn mobile-nav"><i class="fas fa-bars"></i></div>
-				<a class="header-logo" href="">
-					<img src="./images/kalles.svg" alt="Kalles logo">
-				</a>
-				<nav class="header-nav">
-					<ul class="header-menu">
-						<li><a href="">Demo</a></li>
-						<li><a href="">Shop</a><span class="span-badge">New</span></li>
-						<li><a href="">Product</a></li>
-						<li><a href="">Sale</a><span class="span-badge">Sale</span></li>
-						<li><a href="">Portfolio</a></li>
-						<li><a href="">Lookbook</a></li>
-						<li><a href="">Blog</a></li>
+				<div class="header-bottom__wrapper flex row">
+					<div class="btn mobile-nav flex-start col-small-4"><i class="fas fa-bars"></i></div>
+					<a class="header-logo flex-start col-large-2 col-small-4" href="">
+						<img src="./images/kalles.svg" alt="Kalles logo">
+					</a>
+					<nav class="header-nav col-large-8">
+						<ul class="header-menu flex-center">
+							<li><a href="" class="flex-center">Demo</a></li>
+							<li><a href="" class="flex-center">Shop<span class="span-badge">New</span></a></li>
+							<li><a href="" class="flex-center">Product</a></li>
+							<li><a href="" class="flex-center">Sale<span class="span-badge">Sale</span></a></li>
+							<li><a href="" class="flex-center">Portfolio</a></li>
+							<li><a href="" class="flex-center">Lookbook</a></li>
+							<li><a href="" class="flex-center">Blog</a></li>
+						</ul>
+					</nav>
+					<ul class="header-action flex-end col-large-2 col-small-4">
+						<li class="flex-center"><a href=""><i class="fas fa-search"></i></a></li>
+						<li class="action-user flex-center"><a href=""><i class="far fa-user"></i></a></li>
+						<li class="action-fav flex-center"><a href=""><i class="far fa-heart"></i>
+								<!-- <span class="span-counter">3</span> -->
+							</a>
+						</li>
+						<li class="flex-center"><a href=""><i class="fas fa-shopping-cart"></i>
+								<!-- <span class="span-counter">5</span> -->
+							</a></li>
 					</ul>
-				</nav>
-				<ul class="header-action">
-					<li><a href=""><i class="fas fa-search"></i></a></li>
-					<li><a href=""><i class="far fa-user"></i></i></a></li>
-					<li><a href=""><i class="far fa-heart"></i></i><span class="span-counter">3</span></a></li>
-					<li><a href=""><i class="fas fa-shopping-cart"></i></i><span class="span-counter">5</span></a></li>
-				</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -93,7 +103,7 @@
 			<a href="">
 				<img src="./images/loobook.jpg" alt="banner img">
 			</a>
-			<div class="banner-content">
+			<div class="banner-content flex-column txt-center">
 				<h1 class="banner-title">CLEARANCE SALE OFF TO 70%</h1>
 				<h2 class="banner-sub-title">Spring Collection 2021</h2>
 				<a href="" class="btn btn-outline">Shop Now</a>
@@ -103,33 +113,33 @@
 		<section class="section-category">
 			<div class="container-full">
 				<ul class="category-list row">
-					<li class="category-item col-3">
+					<li class="category-item col-3 col-medium-3 col-small-12">
 						<a href="" class="category-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/cat-bn-01.jpg" alt="category img">
 							</div>
 						</a>
 						<a href="" class="category-name btn btn-round">Footwear</a>
 					</li>
-					<li class="category-item col-3">
+					<li class="category-item col-3 col-medium-3 col-small-12">
 						<a href="" class="category-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/cat-bn-02.jpg" alt="category img">
 							</div>
 						</a>
 						<a href="" class="category-name btn btn-round">Bags</a>
 					</li>
-					<li class="category-item col-3">
+					<li class="category-item col-3 col-medium-3 col-small-12">
 						<a href="" class="category-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/cat-bn-03.jpg" alt="category img">
 							</div>
 						</a>
 						<a href="" class="category-name btn btn-round">Watches</a>
 					</li>
-					<li class="category-item col-3">
+					<li class="category-item col-3 col-medium-3 col-small-12">
 						<a href="" class="category-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/cat-bn-04.jpg" alt="category img">
 							</div>
 						</a>
@@ -142,7 +152,7 @@
 		<section class="section-promotion">
 			<div class="container">
 				<ul class="promotion-list row">
-					<li class="promotion-item col-4 promotion-item-left">
+					<li class="promotion-item promotion-item-left col-4 col-medium-4 col-small-12">
 						<a href="">
 							<img src="./images/bn-01.jpeg" alt="promotion img">
 						</a>
@@ -153,16 +163,16 @@
 						</div>
 					</li>
 
-					<li class="promotion-item col-4">
+					<li class="promotion-item col-4 col-medium-4 col-small-12">
 						<a href="">
 							<img src="./images/pr-big-24.jpg" alt="promotion img">
 						</a>
 						<div class="promotion-item-top">
 							<i class="far fa-heart"></i>
-							<span class="discount-percent-tag">-34%</span>
+							<span class="discount-percent-tag flex-center">-34%</span>
 						</div>
 						<div class="promotion-item-middle">
-							<ul class="promotion-action">
+							<ul class="promotion-action flex-column">
 								<li>
 									<a href="" class="btn btn-quick-view">
 										<i class="icon icon-eye"></i>
@@ -196,32 +206,32 @@
 									</li>
 								</ul>
 							</div>
-							<ul class="time-counter">
+							<ul class="time-counter flex-center txt-center">
 								<li class="time-counter-item">
-									<span class="time-number">128 </span>
-									<span class="time-unit">days</span>
+									<span class="time-number flex-column flex-end">128</span>
+									<span class="time-unit flex-column flex-start">days</span>
 								</li>
 								<li class="time-counter-item">
-									<span class="time-number">12</span>
-									<span class="time-unit">hr</span>
+									<span class="time-number flex-column flex-end">12</span>
+									<span class="time-unit flex-column flex-start">hr</span>
 								</li>
 								<li class="time-counter-item">
-									<span class="time-number">47</span>
-									<span class="time-unit">min</span>
+									<span class="time-number flex-column flex-end">47</span>
+									<span class="time-unit flex-column flex-start">min</span>
 								</li>
 								<li class="time-counter-item">
-									<span class="time-number">55</span>
-									<span class="time-unit">sc</span>
+									<span class="time-number flex-column flex-end">55</span>
+									<span class="time-unit flex-column flex-start">sc</span>
 								</li>
 							</ul>
 						</div>
 					</li>
 
-					<li class="promotion-item col-4 promotion-item-right">
+					<li class="promotion-item promotion-item-right col-4 col-medium-4 col-small-12">
 						<a href="">
 							<img src="./images/pr-big-26.jpg" alt="promotion img">
 						</a>
-						<div class="promotion-content">
+						<div class="promotion-content flex-column txt-center">
 							<h3>MEN COLLECTION</h3>
 							<h4>SALE 70%</h4>
 							<a href="" class="btn btn-outline">Shop Now</a>
@@ -232,55 +242,80 @@
 		</section>
 
 		<section class="section-instagram-gallery">
-			<h2 class="section-title"><span class="section-title__span">INSTAGRAM SHOP</span></h2>
-			<p class="section-description">Make your instagram shop</p>
+			<h2 class="section-title flex-center"><span class="section-title__span">INSTAGRAM SHOP</span></h2>
+			<p class="section-description txt-center">Make your instagram shop</p>
 			<ul class="gallery-item-list row">
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-01.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-19-67">1</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-02.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-50-50">1</span>
 					<span class="btn btn-circle position-33-90">2</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-03.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-80-78">1</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-04.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-50-50">1</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-01.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-19-67">1</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-02.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-50-50">1</span>
 					<span class="btn btn-circle position-33-90">2</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-03.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-80-78">1</span>
 				</li>
-				<li class="gallery-item col-3">
-					<div>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
+						<img src="./images/bg-pin-04.jpg" alt="gallery item img">
+					</div>
+					<span class="btn btn-circle position-50-50">1</span>
+				</li>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
+						<img src="./images/bg-pin-01.jpg" alt="gallery item img">
+					</div>
+					<span class="btn btn-circle position-19-67">1</span>
+				</li>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
+						<img src="./images/bg-pin-02.jpg" alt="gallery item img">
+					</div>
+					<span class="btn btn-circle position-50-50">1</span>
+					<span class="btn btn-circle position-33-90">2</span>
+				</li>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
+						<img src="./images/bg-pin-03.jpg" alt="gallery item img">
+					</div>
+					<span class="btn btn-circle position-80-78">1</span>
+				</li>
+				<li class="gallery-item col-3 col-large-3 col-medium-4 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/bg-pin-04.jpg" alt="gallery item img">
 					</div>
 					<span class="btn btn-circle position-50-50">1</span>
@@ -290,12 +325,12 @@
 
 		<section class="section-blog">
 			<div class="container">
-				<h2 class="section-title"><span class="section-title__span">LASTS FROM BLOG</span></h2>
-				<p class="section-description">The freshest and most exciting news</p>
+				<h2 class="section-title flex-center"><span class="section-title__span">LASTS FROM BLOG</span></h2>
+				<p class="section-description txt-center">The freshest and most exciting news</p>
 				<ul class="blog-list row">
-					<li class="blog-item col-4">
+					<li class="blog-item col-4 col-medium-4 col-small-12">
 						<a href="" class="blog-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/blog-01.jpg" alt="blog img">
 							</div>
 						</a>
@@ -311,9 +346,9 @@
 								directors, manga artists, ...</p>
 						</div>
 					</li>
-					<li class="blog-item col-4">
+					<li class="blog-item col-4 col-medium-4 col-small-12">
 						<a href="" class="blog-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/blog-02.jpg" alt="blog img">
 							</div>
 						</a>
@@ -329,9 +364,9 @@
 								directors, manga artists, ...</p>
 						</div>
 					</li>
-					<li class="blog-item col-4">
+					<li class="blog-item col-4 col-medium-4 col-small-12">
 						<a href="" class="blog-img">
-							<div>
+							<div class="div-image-container">
 								<img src="./images/blog-03.jpg" alt="blog img">
 							</div>
 						</a>
@@ -352,52 +387,54 @@
 		</section>
 
 		<section class="section-instagram-carousel">
-			<h2 class="section-title"><span class="section-title__span">@ FOLLOW US ON INSTAGRAM</span></h2>
+			<h2 class="section-title flex-center">
+				<span class="section-title__span txt-center">@ FOLLOW US ON INSTAGRAM</span>
+			</h2>
 			<ul class="carousel-list row">
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_1.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-39-39">1</span>
 				</li>
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_2.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-50-50">1</span>
 				</li>
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_4.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-32-67">1</span>
 					<span class="btn btn-circle position-98-44">2</span>
 				</li>
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_5.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-28-79">1</span>
 				</li>
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_6.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-48-66">1</span>
 				</li>
-				<li class="carousel-item col-2">
-					<div>
+				<li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
+					<div class="div-image-container">
 						<img src="./images/ins1_8.jpg" alt="carousel img">
 					</div>
 					<span class="btn btn-circle position-60-42">1</span>
 				</li>
-				<!-- <li class="carousel-item col-2">
+				<!-- <li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
                     <div>
                         <img src="./images/ins1_13.jpg" alt="carousel img">
                     </div>
                     <span class="btn btn-circle">1</span>
                 </li>
-                <li class="carousel-item col-2">
+                <li class="carousel-item col-2 col-large-2 col-medium-3 col-small-6">
                     <div>
                         <img src="./images/ins1_14.jpg" alt="carousel img">
                     </div>
@@ -417,21 +454,21 @@
 		<section class="section-service">
 			<div class="container">
 				<ul class="service-list row">
-					<li class="service-item col-3">
+					<li class="service-item flex col-3 col-large-3 col-medium-6 col-small-12">
 						<i class="fas fa-car"></i>
 						<div class="service-info">
 							<h3 class="service-title">FREE SHIPPING</h3>
 							<p class="service-description">Free shipping on all US order or order above $100</p>
 						</div>
 					</li>
-					<li class="service-item col-3">
+					<li class="service-item flex col-3 col-large-3 col-medium-6 col-small-12">
 						<i class="far fa-life-ring"></i>
 						<div class="service-info">
 							<h3 class="service-title">SUPPORT 24/7</h3>
 							<p class="service-description">Contact us 24 hours a day, 7 days a week</p>
 						</div>
 					</li>
-					<li class="service-item col-3">
+					<li class="service-item flex col-3 col-large-3 col-medium-6 col-small-12">
 						<i class="fas fa-redo-alt"></i>
 						<div class="service-info">
 							<h3 class="service-title">30 DAYS RETURN</h3>
@@ -439,7 +476,7 @@
 						</div>
 
 					</li>
-					<li class="service-item col-3">
+					<li class="service-item flex col-3 col-large-3 col-medium-6 col-small-12">
 						<i class="fas fa-user-shield"></i>
 						<div class="service-info">
 							<h3 class="service-title">100% PAYMENT SECURE</h3>
@@ -455,8 +492,7 @@
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
-
-					<div class="footer-top-col col-3">
+					<div class="footer-top-col col-3 col-large-3 col-medium-6 col-small-12">
 						<a href="#" class="footer-logo">
 							<img src="./images/kalles.svg" alt="Kalles logo">
 						</a>
@@ -475,7 +511,7 @@
 								<span>+001 2233 456</span>
 							</li>
 						</ul>
-						<ul class="social-list">
+						<ul class="social-list flex">
 							<li class="social-item">
 								<a href="">
 									<i class="fab fa-facebook-f"></i>
@@ -504,7 +540,7 @@
 						</ul>
 					</div>
 
-					<div class="footer-top-col col-2">
+					<div class="footer-top-col col-2 col-large-2 col-medium-6 col-small-12">
 						<h3 class="footer-title">Categories</h3>
 						<ul class="footer-top-link-list">
 							<li>
@@ -528,7 +564,7 @@
 						</ul>
 					</div>
 
-					<div class="footer-top-col col-2">
+					<div class="footer-top-col col-2 col-large-2 col-medium-6 col-small-12">
 						<h3 class="footer-title">Information</h3>
 						<ul class="footer-top-link-list">
 							<li>
@@ -552,7 +588,7 @@
 						</ul>
 					</div>
 
-					<div class="footer-top-col col-2">
+					<div class="footer-top-col col-2 col-large-2 col-medium-6 col-small-12">
 						<h3 class="footer-title">Useful Links</h3>
 						<ul class="footer-top-link-list">
 							<li>
@@ -576,14 +612,14 @@
 						</ul>
 					</div>
 
-					<div class="footer-top-col col-3">
+					<div class="footer-top-col col-3 col-large-3 col-medium-6 col-small-12">
 						<h3 class="footer-title">Newsletter Signup</h3>
 						<p>Subscribe to our newsletter and get 10% off your first purchase</p>
-						<form action="#" class="form-newsletter">
-							<input type="email" name="email" id="email" placeholder="Your Email Address">
-							<button class="btn btn-submit" type="submit">Subscribe</button>
+						<form action="#" class="form-newsletter flex">
+							<input type="email" class="col-small-7" name="email" id="email" placeholder="Your Email Address">
+							<button class="btn btn-submit col-small-5" type="submit">Subscribe</button>
 						</form>
-						<ul class="payment-list">
+						<ul class="payment-list flex">
 							<li class="payment-item">
 								<a href="">
 									<i class="fab fa-cc-visa"></i>
@@ -619,11 +655,11 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="copyright">
+					<p class="copyright col-large-6 col-small-12">
 						Copyright © 2021 <span class="text-cyan">Kalles</span> all rights reserved. Powered by <a href="">The4</a>
 					</p>
-	
-					<ul class="footer-bottom-link-list">
+
+					<ul class="footer-bottom-link-list flex-end col-large-6 col-small-12">
 						<li><a href="">Shop</a></li>
 						<li><a href="">About Us</a></li>
 						<li><a href="">Contact</a></li>

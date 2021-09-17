@@ -1,0 +1,110 @@
+.page-footer {
+
+  .footer-top {
+    background-color: #f6f6f8;
+    padding: 80px 0 30px;
+    color: map-get($colors, primary);
+    margin: 0;
+  }
+
+  .footer-top-col {
+    margin-bottom: 50px;
+    line-height: 28px;
+    form {
+      margin-top: 18px;
+      padding: 2px;
+    }
+  }
+
+  .footer-logo {
+    display: block;
+    img {
+      margin-bottom: 15px;
+    }
+  }
+
+  .contact-list {
+    margin-top: 18px;
+    .contact-item {
+      margin-bottom: 18px;
+      line-height: 25px;
+      i {
+        margin-right: 5px;
+        height: 24px;
+      }
+    }
+  }
+
+  .span-pd-30 {
+    padding-left: 30px;
+  }
+
+  .social-item {
+    margin: 0 10px;
+  }
+
+  .footer-title {
+    font-size: f-pxRem(16);
+    font-weight: map-get($font-weight, medium);
+    line-height: 23px;
+    color: #220000;
+    margin-bottom: 30px;
+  }
+
+  .footer-top-link-list {
+    li {
+      margin-bottom: 5px;
+      line-height: 30px;
+    }
+  }
+
+  .payment-list {
+    margin: 20px 0 18px 0;
+    .payment-item {
+      margin-right: 10px;
+      font-size: f-pxRem(22);
+    }
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+    line-height: 21px;
+  }
+
+  .footer-bottom-link-list {
+    li {
+      margin-left: 20px;
+    }
+  }
+}
+
+@include respond-below(large) {
+  .page-footer {
+
+    .copyright {
+      text-align: center;
+      padding: 0;
+    }
+
+    .footer-bottom-link-list {
+      font-size: f-pxRem(14);
+      text-align: center;
+      margin-top: 15px;
+      justify-content: center;
+      li {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+@include respond-below(medium) {
+  .page-footer {
+    
+    .footer-bottom-link-list {
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #222;
+  border-radius: 40px;
+  font-weight: 600;
+
+  height: 40px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #eee;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
