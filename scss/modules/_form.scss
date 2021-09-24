@@ -1,0 +1,21 @@
+.form-newsletter {
+  border-radius: 50px;
+  border: 1px solid map-get($colors, primary);
+
+  input {
+    color: map-get($colors, primary);
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    line-height: 18px;
+    padding: 0 10px;
+  }
+
+  .btn-submit {
+    background-color: map-get($colors, black);
+    border-radius: 50px;
+    padding: 0 20px;
+    color: map-get($colors, white);
+  }
+}

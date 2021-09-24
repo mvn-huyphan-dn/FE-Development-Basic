@@ -1,0 +1,40 @@
+.header-banner {
+  background-color: #e91e63;
+
+  &__text {
+    font-size: f-pxRem(12);
+    flex: 1;
+    text-align: center;
+    color: map-get($colors, white);
+    strong {
+      font-size: f-pxRem(14);
+      font-weight: map-get($font-weight, semibold);
+    }
+  }
+
+  .btn-close-temp {
+    opacity: 0;
+  }
+
+  a {
+    :hover {
+      color: map-get($colors, white);
+    }
+  }
+
+  button {
+    color: map-get($colors, white);
+    padding: 0 15px;
+    &:hover {
+      color: #9188af;
+    }
+  }
+  
+  .header-banner {
+    &__link {
+      display: flex;
+      height: 44px;
+      align-items: center;
+    }
+  }
+}
